@@ -1,4 +1,8 @@
-/*
+/*We could do something like this you know. http://play.textadventures.co.uk/Play.aspx?id=t6l0-u78k0qxhy1zdpnn3w or
+http://play.textadventures.co.uk/Play.aspx?id=wds-i4cyp0syixvyynb_ca 
+
+
+
 *	Super Awesome RPG!!!!!!
 *	Totally going to be badass
 *	By Holden, Nick, & Michael
