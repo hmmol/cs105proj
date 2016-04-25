@@ -1,0 +1,13 @@
+body {
+    background-color: black;
+    color: green
+} 
+
+.TextBox {
+color: green;
+background-color : black;
+margin: 0 auto;
+margin-left: auto;
+margin-right: auto;
+text-align:center;
+}
