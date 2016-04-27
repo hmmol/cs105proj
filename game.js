@@ -1,8 +1,4 @@
-/*We could do something like this you know. http://play.textadventures.co.uk/Play.aspx?id=t6l0-u78k0qxhy1zdpnn3w or
-http://play.textadventures.co.uk/Play.aspx?id=wds-i4cyp0syixvyynb_ca 
-
-
-
+/*
 *	Super Awesome RPG!!!!!!
 *	Totally going to be badass
 *	By Holden, Nick, & Michael
@@ -19,9 +15,22 @@ function StartGame()
 //Print a start menu?
 //Give opening scene?
 {
-	call function() to start game here;
-}
+	//Initial menu
+	document.getElementById('outputDiv'),innerHTML =
+		'>>Welcome to the terminal.<br>' +
+		'>>Please select an option below.<br>' +
+		'1. Enter Digita<br>' +
+		'2. Continue<br>' +
+		'3. Exit<br>;'
 
+		var Scene = new Scene("First", 1);
+
+		Scene(1).description = "This is the first scene.";
+		Scene(1).getDescription;
+
+	//GetInput();
+}
+/*
 function NextScene(choice)
 //Purpose: Advance story to next part
 //Takes in variable choice from
@@ -30,7 +39,7 @@ function NextScene(choice)
 	if (choice == some boolean) {
 		pick a scene;
 	}
-	
+
 	else if (choice == something else) {
 		pick different scene;
 	}
@@ -41,10 +50,11 @@ function GetInput()
 //determine choice
 {
 	var choice;
-	
-	recieve user input via document.getElementById('inputBox').value;
-	
-	parse the string;
-	
-	pass reult by calling NextScene(choice);
+
+	choice = document.getElementById('inputBox').value;
+
+	//parse the string;
+
+	NextScene(choice);
 }
+*/
