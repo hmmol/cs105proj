@@ -16,19 +16,13 @@ function StartGame()
 //Give opening scene?
 {
 	//Initial menu
-	document.getElementById('outputDiv'),innerHTML =
+	document.getElementById('textfield').innerHTML =
 		'>>Welcome to the terminal.<br>' +
 		'>>Please select an option below.<br>' +
 		'1. Enter Digita<br>' +
 		'2. Continue<br>' +
-		'3. Exit<br>;'
+		'3. Exit<br>';
 
-		var Scene = new Scene("First", 1);
-
-		Scene(1).description = "This is the first scene.";
-		Scene(1).getDescription;
-
-	//GetInput();
 }
 /*
 function NextScene(choice)
