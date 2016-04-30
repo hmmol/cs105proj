@@ -3,15 +3,22 @@
 <head>
 	<title>Final Project</title>
 	<link rel="stylesheet" type="text/css" href="computer_project.css">
+	<script type="text/javascript" src="game.js">
+	</script>
+	<script type="text/javascript" src="scenes.js">
+	</script>
 
 </head>
-<body>
+<body onload="StartGame();">
 
-<div class="TextBox">
-	<textarea rows="100" cols="100" style="green" >
+<div class="TextBox" id="textfield">
+	<!--<textarea id="game" name="txtarea" rows="100" cols="100" style="green" >
 	Interactive Story Text
-	</textarea>
+	</textarea> -->
 </div>
+<input class="Input" type="text" id="input" value=">>" 
+	onkeydown="if (event.keyCode == 13)
+					NextScene();">
 
 </body>
 </html>
