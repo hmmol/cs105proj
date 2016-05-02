@@ -9,46 +9,53 @@
 *
 * =================================================
 */
-
 function StartGame()
 //Purpose: Initialize the game
 //Print a start menu?
 //Give opening scene?
 {
 	//Initial menu
-	document.getElementById('textfield').innerHTML =
-		'>>Welcome to the terminal.<br>' +
-		'>>Please select an option below.<br>' +
-		'1. Enter Digita<br>' +
-		'2. Continue<br>' +
-		'3. Exit<br>';
-
-}
-/*
-function NextScene(choice)
-//Purpose: Advance story to next part
-//Takes in variable choice from
-//GetInput() to determine next scene
-{
-	if (choice == some boolean) {
-		pick a scene;
-	}
-
-	else if (choice == something else) {
-		pick different scene;
-	}
+	document.getElementById('textfield').value =
+		'With a click and an explosion of light from its interior vacuum tubes, the monitor ' +
+		'comes to life. The screen is an unbroken field of black, save for the singular intrusion of a ' +
+		'\ngreen cursor several pixels wide. After a few seconds\' delay, a simple message appears ' +
+		'on the screen. It reads:\n' +
+		'\">>Welcome Home.\"' +
+		'\nWhat do you do?\n' +
+		'\n1. Try to type something into the computer.' +
+		'\n2. Look around.' +
+		'\n3. Try to remember how I got here.'
 }
 
-function GetInput()
-//Purpose: Get user input, parse,
-//determine choice
-{
-	var choice;
+function SceneOne() {
+	document.getElementById('textfield').value +=
+		'\n\nYou\'re not quite sure what to make of the thing, but you figure \n' +
+		'that there must be some way to get into the system. You decide to try a few\n' +
+		'simple passwords first. Phrases like \'password\' and \'hello123\', predictably,\n' +
+		'don\'t work. You rack your brain for a few minutes, trying just about anything that\n' +
+		'comes to mind. Eventually you settle on trying an actual sentence. After all, what could\n' +
+		'it hurt? Worst case scenario, you\'re just talking to a computer. You type:\n' +
+		'\">>Thanks. Glad to be back.\"' +
+		'\nYou hit the enter key, and for a few moments nothing seems to happen. Then, as if ' +
+		'it were thinking of a response, new text appears on the screen beneath yours:\n' +
+		'\">>Your gratitude is appreciated. What can I do for you?\"';
 
-	choice = document.getElementById('inputBox').value;
-
-	//parse the string;
-
-	NextScene(choice);
+	document.getElementById('choice1').onclick= SceneFour();
+	document.getElementById('choice2').onclick= SceneFive();
+	document.getElementById('choice3').onclick= SceneSix();
 }
-*/
+
+function SceneTwo() {
+	document.getElementById('textfield').value +=
+		'Second bit.<br>';
+}
+
+function SceneThree() {
+	document.getElementById('textfield').value +=
+		'Third bit.<br>';
+}
+
+function SceneFour() {
+	document.getElementById('textfield').value +=
+		'\n\nFourth bit.';
+}
