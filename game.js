@@ -56,7 +56,8 @@ function SceneTwo() {
 
 function SceneThree() {
 	document.getElementById('textfield').value +=
-		'You pause for a moment and try to recall exactly how you got here.';
+		'You pause for a moment and try to recall exactly how you got here. The last thing you remember is falling asleep\n' +
+		'at home. How long ago that was, whether it was hours, days, weeks...you don\'t know.';
 }
 
 function SceneFour() {
