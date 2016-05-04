@@ -16,7 +16,7 @@ function StartGame()
 {
 	//Initial menu
 	document.getElementById('textfield').value =
-		'With a click and an explosion of light from its interior vacuum tubes, the monitor ' +
+		'With a click and an explosion of light from it's interior vacuum tubes, the monitor ' +
 		'comes to life. The screen is an unbroken field of black, save for the singular intrusion of a ' +
 		'\ngreen cursor several pixels wide. After a few seconds\' delay, a simple message appears ' +
 		'on the screen. It reads:\n' +
