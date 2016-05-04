@@ -47,12 +47,16 @@ function SceneOne() {
 
 function SceneTwo() {
 	document.getElementById('textfield').value +=
-		'Second bit.<br>';
+		'You decide to take stock of your situation. In front of you sits a large CRT monitor, resting atop a warped\n' +
+		'wooden desk. Underneath the desk, resting on a slate gray floor, is a behemoth of a computer tower. It\'s clearly\n' +
+		'a couple of decades old at least. The room itself is dark, the only light coming from a single bulb suspended\n' +
+		'from the ceiling above you, shining a dim cone of light on you and the computer setup. The rest of the room\n' +
+		'is empty save for a single heavy metal door on the far side.\n\n';
 }
 
 function SceneThree() {
 	document.getElementById('textfield').value +=
-		'Third bit.<br>';
+		'You pause for a moment and try to recall exactly how you got here.';
 }
 
 function SceneFour() {
