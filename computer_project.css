@@ -1,7 +1,13 @@
-textarea {
-    background-color: #000;
-    border: 1px solid #000;
-    color: #00ff00;
-    padding: 8px;
-    font-family: courier new;
+body {
+    background-color: black;
+    color: green
+} 
+
+.TextBox {
+color: green;
+background-color: black;
+margin: 0 auto;
+margin-left: auto;
+margin-right: auto;
+text-align:center;
 }
