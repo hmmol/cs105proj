@@ -28,21 +28,30 @@ function StartGame()
 }
 
 function SceneOne() {
-	document.getElementById('textfield').value +=
-		'\n\nYou\'re not quite sure what to make of the thing, but you figure \n' +
-		'that there must be some way to get into the system. You decide to try a few\n' +
-		'simple passwords first. Phrases like \'password\' and \'hello123\', predictably,\n' +
-		'don\'t work. You rack your brain for a few minutes, trying just about anything that\n' +
-		'comes to mind. Eventually you settle on trying an actual sentence. After all, what could\n' +
-		'it hurt? Worst case scenario, you\'re just talking to a computer. You type:\n' +
-		'\">>Thanks. Glad to be back.\"' +
-		'\nYou hit the enter key, and for a few moments nothing seems to happen. Then, as if ' +
-		'it were thinking of a response, new text appears on the screen beneath yours:\n' +
-		'\">>Your gratitude is appreciated. What can I do for you?\"';
-
-	document.getElementById('choice1').onclick= SceneFour();
-	document.getElementById('choice2').onclick= SceneFive();
-	document.getElementById('choice3').onclick= SceneSix();
+	if (count == 0) {
+		document.getElementById('textfield').value +=
+			'\n\nYou\'re not quite sure what to make of the thing, but you figure \n' +
+			'that there must be some way to get into the system. You decide to try a few\n' +
+			'simple passwords first. Phrases like \'password\' and \'hello123\', predictably,\n' +
+			'don\'t work. You rack your brain for a few minutes, trying just about anything that\n' +
+			'comes to mind. Eventually you settle on trying an actual sentence. After all, what could\n' +
+			'it hurt? Worst case scenario, you\'re just talking to a computer. You type:\n' +
+			'\">>Thanks. Glad to be back.\"' +
+			'\nYou hit the enter key, and for a few moments nothing seems to happen. Then, as if ' +
+			'it were thinking of a response, new text appears on the screen beneath yours:\n' +
+			'\">>Your gratitude is appreciated. What can I do for you?\"';
+	}
+	
+	else if (count == 1) {
+		document.getElementById('textfield').value +=
+			'\nFirst branch!\n';
+	}
+	
+	else {
+		alert('Error!');
+	}
+	
+	count++;
 }
 
 function SceneTwo() {
