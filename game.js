@@ -9,6 +9,10 @@
 *
 * =================================================
 */
+var  count;
+
+count = 0;
+
 function StartGame()
 //Purpose: Initialize the game
 //Print a start menu?
