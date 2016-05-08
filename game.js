@@ -59,6 +59,7 @@ function SceneOne() {
 }
 
 function SceneTwo() {
+	if (count == 0) {
 	document.getElementById('textfield').value +=
 		'You decide to take stock of your situation. In front of you sits a large CRT monitor, resting atop a warped\n' +
 		'wooden desk. Underneath the desk, resting on a slate gray floor, is a behemoth of a computer tower. It\'s clearly\n' +
@@ -67,13 +68,53 @@ function SceneTwo() {
 		'is empty save for a single heavy metal door on the far side.\n\n';
 }
 
+	else if (count == 1) {
+		document.getElementById('textfield').value +=
+			'\nFirst branch!\n';
+	}
+	
+	else {
+		alert('Error!');
+	}
+	
+	count++;
+}
+
 function SceneThree() {
+	if (count == 0) {
 	document.getElementById('textfield').value +=
 		'You pause for a moment and try to recall exactly how you got here. The last thing you remember is falling asleep\n' +
 		'at home. How long ago that was, whether it was hours, days, weeks...you don\'t know.';
 }
 
+	
+	else if (count == 1) {
+		document.getElementById('textfield').value +=
+			'\nFirst branch!\n';
+	}
+	
+	else {
+		alert('Error!');
+	}
+	
+	count++;
+}
+
 function SceneFour() {
+	if (count == 0) {
 	document.getElementById('textfield').value +=
 		'\n\nFourth bit.';
+}
+
+	
+	else if (count == 1) {
+		document.getElementById('textfield').value +=
+			'\nFirst branch!\n';
+	}
+	
+	else {
+		alert('Error!');
+	}
+	
+	count++;
 }
