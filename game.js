@@ -46,7 +46,7 @@ function OptionOne() {
 			'\">>Your gratitude is appreciated. What can I do for you?\"\n\n' +
 			'1. What is this place? Who are you?\n' +
 			'2. How did I get here?\n' +
-			'3. Who am I?\n';
+			'3. Who am I?\n\n';
 
 			count++;
 	}
@@ -57,7 +57,7 @@ function OptionOne() {
 			'\">>This facility houses a number of what you call Artifical Intelligence Machines.\n' +
 			'For that reason, you may call me Ami.\"\n' +
 			'\n2. How did I get here?' +
-			'\n3. Who am I?';
+			'\n3. Who am I?\n';
 	}
 
 	else {
@@ -84,7 +84,7 @@ function OptionTwo() {
 			' How you came to be confined in this room, and for what reasons,\n' +
 			'are entirely unknown to me.\"\n\n' + 'Real helpful.' +
 			'\n1. What is this place? Who are you?' +
-			'\n3. Who am I?';
+			'\n3. Who am I\n?';
 	}
 
 	else {
@@ -96,7 +96,7 @@ function OptionThree() {
 	if (count == 0) {
 		document.getElementById('textfield').value +=
 			'You pause for a moment and try to recall exactly how you got here. The last thing you remember is falling asleep\n' +
-			'at home. How long ago that was, whether it was hours, days, weeks...you don\'t know.';
+			'at home. How long ago that was, whether it was hours, days, weeks...you don\'t know.\n';
 	}
 
 	else if (count == 1) {
